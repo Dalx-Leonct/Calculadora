@@ -42,23 +42,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String numero1 = num1.getText().toString();
         String numero2 = num2.getText().toString();
 
-        int entero1 = Integer.parseInt(numero1);
-        int entero2 = Integer.parseInt(numero2);
+        double doble1 = Double.parseDouble(numero1);
+        double doble2 = Double.parseDouble(numero2);
 
-        int respuesta = 0;
+        double respuesta = 0;
 
         switch (i.getId()){
             case R.id.sumar:
-                respuesta = entero1 + entero2;
+                respuesta = doble1 + doble2;
                 break;
             case R.id.restar:
-                respuesta = entero1 - entero2;
+                respuesta = doble1 - doble2;
                 break;
             case R.id.multiplicar:
-                respuesta = entero1*entero2;
+                respuesta = doble1*doble2;
                 break;
             case R.id.dividir:
-                respuesta = entero1/entero2;
+                respuesta = doble1/doble2;
                 break;
         }
 
